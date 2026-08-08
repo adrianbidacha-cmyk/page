@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrian - Trener Personalny Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fdf8f3',
+                            100: '#f9eee0',
+                            500: '#c29b62', // Złoty/Szampański kolor Premium
+                            600: '#a8814c',
+                            900: '#4a361c',
+                        },
+                        social: {
+                            whatsapp: '#25D366',
+                            whatsappHover: '#20bd5a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Styl dla gradientu Instagrama w ciemnym motywie */
+        .bg-instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+        .bg-instagram:hover {
+            background: linear-gradient(45deg, #e6892d 0%, #dc5f35 25%, #cc213c 50%, #bc1e5d 75%, #ab147a 100%);
+        }
+        .text-instagram {
+            background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-300 font-sans antialiased selection:bg-brand-900 selection:text-brand-100">
+
+    <nav class="fixed w-full z-50 bg-zinc-950/80 backdrop-blur-lg border-b border-zinc-800/50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="font-bold text-2xl tracking-tight text-white">
+                        Trener Adrian<span class="text-brand-500">.</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#o-mnie" class="text-zinc-400 hover:text-brand-500 px-3 py-2 text-sm font-medium transition-colors">O mnie</a>
+                    <a href="#oferta" class="text-zinc-400 hover:text-brand-500 px-3 py-2 text-sm font-medium transition-colors">Oferta</a>
+                    <a href="#filozofia" class="text-zinc-400 hover:text-brand-500 px-3 py-2 text-sm font-medium transition-colors">Filozofia</a>
+                    <a href="https://wa.me/48530640842?text=Cze%C5%9B%C4%87%20Adrian!%20Chc%C4%99%20rozpocz%C4%85%C4%87%20wsp%C3%B3%C5%82prac%C4%99.%20Mo%C5%BCemy%20porozmawia%C4%87%20o%20szczeg%C3%B3%C5%82ach%3F" target="_blank" rel="noopener noreferrer" class="bg-brand-500 hover:bg-brand-600 text-zinc-950 px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-brand-500/20">
+                        Umów trening
+                    </a>
+                </div>
+                <!-- Menu mobilne ikona -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-zinc-400 hover:text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden bg-zinc-950">
+        <!-- Subtelny efekt świetlny w tle -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-[500px] bg-brand-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+        
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                
+                <div class="lg:w-1/2 text-center lg:text-left order-2 lg:order-1">
+                    <div class="inline-block bg-zinc-900 border border-brand-500/30 text-brand-500 px-4 py-1.5 rounded-full text-sm font-medium mb-6 uppercase tracking-wider">
+                        Twój Trener Personalny
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-tight mb-6">
+                        Twoja wymarzona sylwetka, <br class="hidden sm:block" />
+                        <span class="text-brand-500">krok po kroku.</span>
+                    </h1>
+                    <p class="text-lg text-zinc-400 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
+                        Trening to nie kara, a droga do lepszej wersji siebie. Pomogę Ci przejść przez nią mądrze, bezpiecznie i z dobrą energią. Wykorzystując lata doświadczenia w sporcie, układam plany dopasowane do Twojego stylu życia – bez frustracji i skrajnych restrykcji. Będę Twoim wsparciem na każdym kroku. Zróbmy ten pierwszy krok razem!
+                    </p>
+                    
+                    <!-- Główne przyciski konwersji (CTA) -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="https://wa.me/48530640842?text=Cze%C5%9B%C4%87%20Adrian!%20Chc%C4%99%20rozpocz%C4%85%C4%87%20wsp%C3%B3%C5%82prac%C4%99.%20Mo%C5%BCemy%20porozmawia%C4%87%20o%20szczeg%C3%B3%C5%82ach%3F" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-brand-500 hover:bg-brand-600 text-zinc-950 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:-translate-y-0.5 shadow-lg shadow-brand-500/20">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.183-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.765-5.77zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.125-.333-.151-1.015-.411-1.924-1.229-.79-.708-1.32-1.583-1.472-1.843-.152-.26-.016-.401.111-.528.115-.115.26-.301.389-.452.128-.152.171-.26.256-.434.086-.174.043-.327-.021-.456-.065-.129-.623-1.5-.853-2.054-.224-.541-.452-.468-.621-.477-.156-.008-.335-.01-.514-.01-.179 0-.472.067-.719.334-.247.268-.944.922-.944 2.247s.967 2.607 1.101 2.786c.134.179 1.898 2.898 4.597 4.062.643.278 1.144.444 1.536.568.647.205 1.236.176 1.7.106.526-.079 1.617-.661 1.844-1.301.228-.64.228-1.189.16-1.301-.069-.113-.248-.18-.521-.316zM11.996 2C6.476 2 2 6.478 2 12c0 1.776.467 3.427 1.282 4.869L2 22l5.3-1.256A9.957 9.957 0 0012 22c5.522 0 10-4.478 10-10S17.522 2 11.996 2zm0 18.283c-1.517 0-3.003-.393-4.305-1.135l-.308-.184-3.2.76 .772-3.122-.203-.322c-.82-1.302-1.252-2.825-1.252-4.382 0-4.665 3.793-8.458 8.46-8.458 4.665 0 8.458 3.793 8.458 8.458 0 4.664-3.793 8.459-8.458 8.459z"/></svg>
+                            Napisz na WhatsApp
+                        </a>
+                        <a href="https://www.instagram.com/3citytrener_adrian/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 bg-zinc-900 border border-zinc-800 hover:border-brand-500 text-white px-8 py-4 rounded-full font-medium text-lg transition-all transform hover:-translate-y-0.5">
+                            <svg class="w-6 h-6 text-brand-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                            Mój Instagram
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Zdjęcie główne (Hero Image) dostarczone przez Ciebie -->
+                <div class="lg:w-1/2 order-1 lg:order-2">
+                    <div class="relative">
+                        <!-- Dekoracyjne tło pod zdjęciem premium -->
+                        <div class="absolute inset-0 border border-brand-500/30 rounded-[2.5rem] transform translate-x-4 translate-y-4 -z-10"></div>
+                        <img src="PXL_20260725_065852148.jpg" alt="Trener Adrian - Sylwetka" loading="lazy" class="rounded-[2.5rem] shadow-2xl shadow-black w-full object-cover h-[500px] lg:h-[650px] border border-zinc-800 bg-zinc-900" />
+                        
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-6 -left-6 bg-zinc-900 border border-zinc-800 p-4 rounded-2xl shadow-xl flex items-center gap-4">
+                            <div class="bg-brand-500/10 p-3 rounded-full text-brand-500">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs text-zinc-400 font-medium uppercase tracking-wider">Status</p>
+                                <p class="font-bold text-white">Przyjmuję podopiecznych</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="o-mnie" class="py-24 bg-zinc-900 border-t border-zinc-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Dyscyplina buduje charakter</h2>
+                <div class="w-16 h-1 bg-brand-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-lg text-zinc-400 font-light leading-relaxed">
+                    Sport to dla mnie nie tylko praca, ale styl życia. Wiem, jak poprowadzić Cię przez proces zmiany, ponieważ sam przeszedłem tę drogę, hartując ciało i umysł przez dekady na najwyższych obrotach.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Doświadczenie 1 -->
+                <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800 hover:border-brand-500/50 transition-colors group">
+                    <div class="w-14 h-14 bg-brand-500/10 rounded-2xl flex items-center justify-center text-brand-500 mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"></path></svg>
+                    </div>
+                    <h3 class="text-4xl font-bold text-white mb-2">20 lat</h3>
+                    <h4 class="text-xl font-medium text-brand-500 mb-3">treningów piłki nożnej</h4>
+                    <p class="text-zinc-400 font-light leading-relaxed">
+                        Boisko nauczyło mnie, że na trwałe rezultaty pracuje się regularnością, a nie chwilowymi zrywami. Wyrobiło we mnie doskonałą świadomość ciała i dyscyplinę, które dziś przekładam na Twój bezpieczny i skuteczny trening.
+                    </p>
+                </div>
+
+                <!-- Doświadczenie 2 -->
+                <div class="bg-zinc-950 p-8 rounded-3xl border border-zinc-800 hover:border-brand-500/50 transition-colors group">
+                    <div class="w-14 h-14 bg-brand-500/10 rounded-2xl flex items-center justify-center text-brand-500 mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                    </div>
+                    <h3 class="text-4xl font-bold text-white mb-2">5 lat</h3>
+                    <h4 class="text-xl font-medium text-brand-500 mb-3">kulturystyki</h4>
+                    <p class="text-zinc-400 font-light leading-relaxed">
+                        Kształtowanie sylwetki to lekcja precyzji. Na własnym ciele poznałem mechanizmy budowania mięśni i redukcji tkanki tłuszczowej. Tę wiedzę wykorzystuję teraz, by pomóc Ci osiągnąć cel maksymalnie efektywnie – bez błądzenia po omacku i marnowania czasu.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="oferta" class="py-24 bg-zinc-950">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Wybierz odpowiedni pakiet</h2>
+                <div class="w-16 h-1 bg-brand-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-lg text-zinc-400 font-light max-w-2xl mx-auto">
+                    Jasne zasady, przejrzysty cennik. Inwestujesz w sprawdzoną wiedzę i konkretne rezultaty. Wybierz formę współpracy.
+                </p>
+            </div>
+
+            <!-- Siatka ofert -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                
+                <!-- 1. Bezpłatna Konsultacja (Lead Magnet) -->
+                <div class="bg-zinc-900/50 backdrop-blur-sm rounded-3xl p-8 border border-brand-500/40 flex flex-col group hover:border-brand-500 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-500/10 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-brand-500 text-zinc-950 text-xs font-bold px-4 py-1.5 rounded-bl-xl shadow-md tracking-wider">KROK 1</div>
+                    <div class="text-xs font-bold text-brand-500 uppercase tracking-wider mb-1">Audyt Sylwetki</div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-500 transition-colors">Bezpłatna konsultacja</h3>
+                    <p class="text-sm text-zinc-500 mb-6 min-h-[40px]">Rozmowa online / na żywo</p>
+                    <div class="mb-6 flex-grow">
+                        <span class="text-4xl font-extrabold text-white">0</span>
+                        <span class="text-zinc-500 font-medium">zł</span>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-zinc-300 text-sm font-light">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Krótka rozmowa zapoznawcza
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Analiza Twojego punktu wyjścia
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Zdiagnozowanie barier i przygotowanie planu działania
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Wybór najlepszej formy współpracy
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/48530640842?text=Cze%C5%9B%C4%87%20Adrian!%20Chcia%C5%82bym%20um%C3%B3wi%C4%87%20si%C4%99%20na%20bezp%C5%82atn%C4%85%20konsultacj%C4%99%20i%20audyt%20sylwetki." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-zinc-800 group-hover:bg-brand-500 group-hover:text-zinc-950 text-white py-3 rounded-xl font-semibold transition-all duration-300 mt-auto border border-zinc-700 group-hover:border-brand-500">
+                        Umów rozmowę
+                    </a>
+                </div>
+
+                <!-- 2. Plan Jednorazowy -->
+                <div class="bg-zinc-900/50 backdrop-blur-sm rounded-3xl p-8 border border-zinc-800 flex flex-col group hover:border-brand-500/50 hover:bg-zinc-900 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-500/10">
+                    <div class="text-xs font-bold text-zinc-500 group-hover:text-brand-500 transition-colors uppercase tracking-wider mb-1">Fundament Sukcesu</div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-500 transition-colors">Plan treningowy + Makro</h3>
+                    <p class="text-sm text-zinc-500 mb-6 min-h-[40px]">Indywidualna rozpiska na 4 tyg.</p>
+                    <div class="mb-6 flex-grow">
+                        <span class="text-4xl font-extrabold text-white">200</span>
+                        <span class="text-zinc-500 font-medium">zł</span>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-zinc-300 text-sm font-light">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Wywiad, dogłębna analiza i ustalenie priorytetów
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Indywidualny plan treningowy z zaplanowaną progresją
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Precyzyjne zapotrzebowanie (kcal i makro)
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Analiza postępów (tygodniowe raporty)
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/48530640842?text=Cze%C5%9B%C4%87%20Adrian!%20Interesuje%20mnie%20rozpisanie%20planu%20treningowego%20z%20makro." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-zinc-800 group-hover:bg-brand-500 group-hover:text-zinc-950 text-white py-3 rounded-xl font-semibold transition-all duration-300 mt-auto border border-zinc-700 group-hover:border-brand-500">
+                        Zamów plan
+                    </a>
+                </div>
+
+                <!-- 3. Prowadzenie Online -->
+                <div class="bg-zinc-900/50 backdrop-blur-sm rounded-3xl p-8 border border-zinc-800 flex flex-col group hover:border-brand-500/50 hover:bg-zinc-900 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-500/10">
+                    <div class="text-xs font-bold text-zinc-500 group-hover:text-brand-500 transition-colors uppercase tracking-wider mb-1">Metamorfoza Zdalna</div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-500 transition-colors">Prowadzenie online</h3>
+                    <p class="text-sm text-zinc-500 mb-6 min-h-[40px]">Stała współpraca i optymalizacja</p>
+                    <div class="mb-6 flex-grow">
+                        <div>
+                            <span class="text-4xl font-extrabold text-white">350</span>
+                            <span class="text-zinc-500 font-medium">zł / m-c</span>
+                        </div>
+                        <div class="mt-1 flex items-center gap-1.5">
+                            <span class="text-sm text-zinc-400">lub</span>
+                            <span class="text-sm font-bold text-white">700 zł / 10 tyg.</span>
+                            <span class="text-xs font-bold bg-brand-500/10 text-brand-500 px-2 py-0.5 rounded-md border border-brand-500/20">(-20%)</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-zinc-300 text-sm font-light">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Ciągła adaptacja planu i diety
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Szczegółowa korekta techniki wideo
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Dobór celowanej suplementacji
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Bieżące wsparcie (kontakt WhatsApp)
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/48530640842?text=Cze%C5%9B%C4%87%20Adrian!%20Jestem%20zainteresowany%20prowadzeniem%20online.%20Kiedy%20mo%C5%BCemy%20zacz%C4%85%C4%87%3F" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-zinc-800 group-hover:bg-brand-500 group-hover:text-zinc-950 text-white py-3 rounded-xl font-semibold transition-all duration-300 mt-auto border border-zinc-700 group-hover:border-brand-500">
+                        Rozpocznij online
+                    </a>
+                </div>
+
+                <!-- 4. Pojedynczy Trening -->
+                <div class="bg-zinc-900/50 backdrop-blur-sm rounded-3xl p-8 border border-zinc-800 flex flex-col group hover:border-brand-500/50 hover:bg-zinc-900 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-brand-500/10">
+                    <div class="text-xs font-bold text-zinc-500 group-hover:text-brand-500 transition-colors uppercase tracking-wider mb-1">Ocena Ekspercka</div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-brand-500 transition-colors">Pojedynczy trening</h3>
+                    <p class="text-sm text-zinc-500 mb-6 min-h-[40px]">Zdrofit, Banino</p>
+                    <div class="mb-6 flex-grow">
+                        <span class="text-4xl font-extrabold text-white">180</span>
+                        <span class="text-zinc-500 font-medium">zł</span>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-zinc-300 text-sm font-light">
+                        <comment-tag id="2"><li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            60 minut intensywnej pracy na sali
+                        </li></comment-tag id="2" text="Mając na uwadze Twoją przyjazną filozofię ('Mądry trening', 'Bez rygoru'), słowo 'intensywnej' może niepotrzebnie onieśmielać osoby początkujące. Zastąpienie tego sformułowaniem budującym poczucie bezpieczeństwa i profesjonalizmu będzie znacznie lepsze.
+
+Sugestia zmiany na:
+<li class='flex items-start gap-2'>
+    <svg class='w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7'></path></svg>
+    60 minut świadomej pracy pod okiem eksperta
+</li>" type="suggestion">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Korekta i optymalizacja techniki
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Identyfikacja słabych ogniw
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Omówienie celów i budowa strategii
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/48530640842?text=Cze%C5%9B%C4%87%20Adrian!%20Chc%C4%99%20um%C3%B3wi%C4%87%20si%C4%99%20na%20pojedynczy%20trening%20personalny." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-zinc-800 group-hover:bg-brand-500 group-hover:text-zinc-950 text-white py-3 rounded-xl font-semibold transition-all duration-300 mt-auto border border-zinc-700 group-hover:border-brand-500">
+                        Umów termin
+                    </a>
+                </div>
+
+                <!-- 5. Pakiet 10 treningów -->
+                <div class="bg-gradient-to-b from-zinc-900 to-zinc-950 rounded-3xl p-8 border-2 border-brand-500 flex flex-col relative shadow-2xl shadow-brand-500/20 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-brand-500/40 z-10">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-brand-500 text-zinc-950 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg shadow-brand-500/30 whitespace-nowrap">
+                        Najpopularniejszy
+                    </div>
+                    <div class="text-xs font-bold text-brand-500/80 uppercase tracking-wider mb-1">Gwarancja Progresu</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Pakiet 10 treningów</h3>
+                    <p class="text-sm text-zinc-400 mb-6 min-h-[40px]">Zdrofit, Banino</p>
+                    <div class="mb-6 flex-grow">
+                        <span class="text-4xl font-extrabold text-white">1500</span>
+                        <span class="text-zinc-500 font-medium">zł</span>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-zinc-300 text-sm font-light">
+                        <comment-tag id="3"><li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="font-medium text-white">Najlepszy zwrot z inwestycji (taniej)</span>
+                        </li></comment-tag id="3" text="Słowo 'taniej' może obniżać rangę Twojej usługi i trochę nie pasuje do trenera celującego w wizerunek Premium. Lepiej zakomunikować opłacalność w bardziej eleganckim tonie.
+
+Sugestia zmiany na:
+<li class='flex items-start gap-2'>
+    <svg class='w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 13l4 4L19 7'></path></svg>
+    <span class='font-medium text-white'>Najkorzystniejsza opcja stałej współpracy</span>
+</li>" type="suggestion">
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Budowa trwałego nawyku treningowego
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Merytoryczny nadzór nad każdą serią
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Pierwszeństwo w rezerwacji grafiku
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-white font-medium">Gratis analiza składu ciała TANITA</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/48530640842?text=Cze%C5%9B%C4%87%20Adrian!%20Decyduj%C4%99%20si%C4%99%20na%20pakiet%2010%20trening%C3%B3w%20personalnych.%20Jakie%20mamy%20dost%C4%99pne%20terminy%3F" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-brand-500 hover:bg-brand-400 text-zinc-950 py-3 rounded-xl font-bold transition-colors mt-auto shadow-lg shadow-brand-500/20">
+                        Kup pakiet
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="filozofia" class="py-24 bg-zinc-900 border-t border-zinc-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Zasady, na których zbudujemy Twój sukces</h2>
+                <div class="w-16 h-1 bg-brand-500 mx-auto rounded-full mb-6"></div>
+                <p class="text-lg text-zinc-400 font-light max-w-2xl mx-auto">
+                    Prawdziwa transformacja nie wymaga drastycznych wyrzeczeń, ale mądrego planu i konsekwencji. Zamiast chwilowych zrywów, proponuję system, który płynnie wpisze się w Twoją codzienność.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Filar 1: Trening -->
+                <div class="bg-zinc-950 rounded-3xl p-8 border border-zinc-800 hover:border-brand-500/50 transition-all duration-300 group hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-zinc-900 border border-brand-500/30 rounded-2xl flex items-center justify-center text-brand-500 mb-6 group-hover:bg-brand-500 group-hover:text-zinc-950 transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Mądry trening</h3>
+                    <p class="text-zinc-400 font-light leading-relaxed">
+                        Koniec z przypadkowymi ćwiczeniami. Każdy ruch w planie ma swój cel. Stawiamy na poprawną technikę, odpowiednie dobieranie obciążeń i progresję, która chroni Twoje stawy i gwarantuje wymierne wyniki.
+                    </p>
+                </div>
+
+                <!-- Filar 2: Dieta -->
+                <div class="bg-zinc-950 rounded-3xl p-8 border border-zinc-800 hover:border-brand-500/50 transition-all duration-300 group hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-zinc-900 border border-brand-500/30 rounded-2xl flex items-center justify-center text-brand-500 mb-6 group-hover:bg-brand-500 group-hover:text-zinc-950 transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Dieta bez rygoru</h3>
+                    <p class="text-zinc-400 font-light leading-relaxed">
+                        Jedzenie ma odżywiać i sprawiać przyjemność, a nie być źródłem ciągłego stresu. Nauczę Cię, jak wpleść w jadłospis ulubione produkty, zachowując bilans kaloryczny niezbędny do osiągnięcia sylwetkowego celu.
+                    </p>
+                </div>
+
+                <!-- Filar 3: Nawyki -->
+                <div class="bg-zinc-950 rounded-3xl p-8 border border-zinc-800 hover:border-brand-500/50 transition-all duration-300 group hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-zinc-900 border border-brand-500/30 rounded-2xl flex items-center justify-center text-brand-500 mb-6 group-hover:bg-brand-500 group-hover:text-zinc-950 transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3">Trwałe nawyki</h3>
+                    <p class="text-zinc-400 font-light leading-relaxed">
+                        Nie interesują mnie metamorfozy na chwilę ani głodówki. Skupiamy się na budowaniu zdrowej rutyny, optymalizacji snu i lepszym zarządzaniu stresem, aby nowa sylwetka (i zdrowie!) zostały z Tobą na lata.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Galeria zdjęć do Filozofii -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                
+                <!-- Zdjęcie 1: Trening -->
+                <div class="relative group rounded-3xl overflow-hidden aspect-[4/5] border border-zinc-800 hover:border-brand-500/50 transition-colors bg-white">
+                    <img src="ciezar.png" alt="Wykres progresji treningowej - Mądry trening" loading="lazy" class="absolute top-[15%] left-1/2 -translate-x-1/2 w-4/5 max-h-[50%] object-contain transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none z-10"></div>
+                    <div class="absolute bottom-0 left-0 w-full p-8 translate-y-2 group-hover:translate-y-0 transition-transform duration-300 z-20">
+                        <p class="text-brand-500 font-bold text-sm uppercase tracking-wider mb-1">Krok 1</p>
+                        <h4 class="text-white font-bold text-2xl">Mądry trening</h4>
+                    </div>
+                </div>
+
+                <!-- Zdjęcie 2: Dieta -->
+                <div class="relative group rounded-3xl overflow-hidden aspect-[4/5] border border-zinc-800 hover:border-brand-500/50 transition-colors">
+                    <img src="food.jpg" alt="Zdrowy, pyszny posiłek" loading="lazy" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 w-full p-8 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <p class="text-brand-500 font-bold text-sm uppercase tracking-wider mb-1">Krok 2</p>
+                        <h4 class="text-white font-bold text-2xl">Dieta bez rygoru</h4>
+                    </div>
+                </div>
+
+                <!-- Zdjęcie 3: Nawyki -->
+                <div class="relative group rounded-3xl overflow-hidden aspect-[4/5] border border-zinc-800 hover:border-brand-500/50 transition-colors">
+                    <img src="rutyna.jpg" alt="Trener Adrian na siłowni - Trwałe nawyki" loading="lazy" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 w-full p-8 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <p class="text-brand-500 font-bold text-sm uppercase tracking-wider mb-1">Krok 3</p>
+                        <h4 class="text-white font-bold text-2xl">Trwałe nawyki</h4>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <footer id="kontakt" class="bg-black border-t border-zinc-900 pt-20 pb-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-8">Zacznijmy współpracę już dziś.</h2>
+            
+            <!-- Duże przyciski kontaktowe w stopce -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-16">
+                <a href="https://wa.me/48530640842?text=Cze%C5%9B%C4%87%20Adrian!%20Chc%C4%99%20rozpocz%C4%85%C4%87%20wsp%C3%B3%C5%82prac%C4%99.%20Mo%C5%BCemy%20porozmawia%C4%87%20o%20szczeg%C3%B3%C5%82ach%3F" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex items-center justify-center gap-3 bg-brand-500 hover:bg-brand-600 text-zinc-950 px-10 py-5 rounded-2xl font-bold text-lg transition-all shadow-lg shadow-brand-500/20">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.183-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.765-5.77z... "/></svg>
+                    Napisz na WhatsApp
+                </a>
+                <span class="text-zinc-600 font-medium hidden sm:block">lub</span>
+                <a href="https://www.instagram.com/3citytrener_adrian/" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex items-center justify-center gap-3 bg-zinc-900 border border-zinc-800 hover:border-brand-500 text-white px-10 py-5 rounded-2xl font-medium text-lg transition-all">
+                    <svg class="w-7 h-7 text-brand-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07... "/></svg>
+                    Odwiedź Instagram
+                </a>
+            </div>
+
+            <div class="border-t border-zinc-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="font-bold text-xl tracking-tight text-white">
+                    Trener Adrian<span class="text-brand-500">.</span>
+                </div>
+                <p class="text-zinc-600 text-sm font-light">
+                    &copy; 2026 Adrian Bidacha - Trener Personalny (Zdrofit, Banino). Wszelkie prawa zastrzeżone.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/48530640842?text=Cze%C5%9B%C4%87%20Adrian!%20Chc%C4%99%20rozpocz%C4%85%C4%87%20wsp%C3%B3%C5%82prac%C4%99.%20Mo%C5%BCemy%20porozmawia%C4%87%20o%20szczeg%C3%B3%C5%82ach%3F" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-brand-500 text-zinc-950 p-4 rounded-full shadow-2xl shadow-black hover:scale-110 transition-transform z-50 group flex items-center gap-3 border border-brand-400">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.183-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.765-5.77zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.125-.333-.151-1.015-.411-1.924-1.229-.79-.708-1.32-1.583-1.472-1.843-.152-.26-.016-.401.111-.528.115-.115.26-.301.389-.452.128-.152.171-.26.256-.434.086-.174.043-.327-.021-.456-.065-.129-.623-1.5-.853-2.054-.224-.541-.452-.468-.621-.477-.156-.008-.335-.01-.514-.01-.179 0-.472.067-.719.334-.247.268-.944.922-.944 2.247s.967 2.607 1.101 2.786c.134.179 1.898 2.898 4.597 4.062.643.278 1.144.444 1.536.568.647.205 1.236.176 1.7.106.526-.079 1.617-.661 1.844-1.301.228-.64.228-1.189.16-1.301-.069-.113-.248-.18-.521-.316zM11.996 2C6.476 2 2 6.478 2 12c0 1.776.467 3.427 1.282 4.869L2 22l5.3-1.256A9.957 9.957 0 0012 22c5.522 0 10-4.478 10-10S17.522 2 11.996 2zm0 18.283c-1.517 0-3.003-.393-4.305-1.135l-.308-.184-3.2.76 .772-3.122-.203-.322c-.82-1.302-1.252-2.825-1.252-4.382 0-4.665 3.793-8.458 8.46-8.458 4.665 0 8.458 3.793 8.458 8.458 0 4.664-3.793 8.459-8.458 8.459z"/></svg>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 font-bold">Napisz do mnie</span>
+    </a>
+</body>
+</html>
